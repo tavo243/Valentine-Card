@@ -9,7 +9,9 @@ function showResponse(answer) {
 
     if (answer) {
         // User clicked "Yes" ❤️
+        triggerConfetti();
         response.innerHTML = "Yay! ❤️ Can't wait to celebrate!";
+        
     } else {
         // User clicked "No" 😢
         clickCount++; // Increase the click count
@@ -105,4 +107,14 @@ function fadeInMusic(music) {
             clearInterval(fadeInterval);
         }
     }, 200);
+}
+
+// Function to trigger confetti
+function triggerConfetti() {
+    confetti({
+        particleCount: 1000, // Number of confetti pieces
+        spread: 70, // How wide the confetti spreads
+        origin: { y: 0.6 }, // Starting position
+        colors: ['#ff0000', '#ff7300', '#fffb00', '#00ff00', '#00d0ff', '#ff00d0'] // Confetti colors
+    });
 }

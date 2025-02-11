@@ -5,6 +5,8 @@
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <title> Valentine's Card </title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
 </head>
 
 <body>
@@ -17,10 +19,16 @@
     <!-- Valentine's Card -->
     <div class="card">
         <div class ="message">
-            <h1> Happy Valentines's Day! ❤️ </h1>
+            <h1> Happy Valentines's Day!  </h1>
+
+            <div id="gif-container"></div>
+                <img src="heart-dance.gif" alt="Dancing heart cat" id=""valentine-gif">
+            </div>
+
             <p> Will you be my Valentine?</p>
             <button id="yes-button" onclick="showResponse(true)">Yes!</button>
             <button id="no-button" onclick="showResponse(false)">No!</button>
+            <!-- Displays response message -->
             <p id="response"></p>
         </div>
     </div>
@@ -28,3 +36,5 @@
 
 </body>
 </html>
+
+<!-- <h1> Happy Valentines's Day! ❤️ </h1> -->
