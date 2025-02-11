@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title> Valentine's Card </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Play Music Button (Placed outside the card) -->
+    <audio id="music" autoplay loop>
+        <source src="Blue Dream - Cheel.mp3" type="audio/mp3">
+    </audio>    
+
+    <!-- Valentine's Card -->
+    <div class="card">
+        <div class ="message">
+            <h1> Happy Valentines's Day! ❤️ </h1>
+            <p> Will you be my Valentine?</p>
+            <button id="yes-button" onclick="showResponse(true)">Yes!</button>
+            <button id="no-button" onclick="showResponse(false)">No!</button>
+            <p id="response"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
